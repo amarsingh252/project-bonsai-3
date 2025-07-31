@@ -6,7 +6,11 @@
     color: #4c525a;
     font-size: 14px;
     font-weight: 400;
+    line-height: 20px;
 }
+
+
+
 
 /* <!-- ********************************************navbar********************************** --> */
 
@@ -152,7 +156,6 @@ hr {
 
 
 
-
 .container-1 {
     display: flex;
     justify-content: center;
@@ -161,15 +164,22 @@ hr {
     gap: 50px;
 }
 
-.container-1 div h1 {
-    font-size: 40px;
-    color: #4c4d5f;
+@font-face {
+    font-family: 'Amerigo-bt roman opt';
+    src: url('./fonts/amerigo-bt.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.container-1:first-child {
-    font-size: 20px;
+.container-1 div h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
     color: #4c4d5f;
+    font-family: 'Amerigo-bt roman opt';
 }
+
+
+
 
 .price {
     display: flex;
@@ -178,11 +188,14 @@ hr {
 }
 
 .price div {
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.22px;
 }
 
 .monthly {
-    color: #292a2d;
+    color: #4c525a;
+
 }
 
 .yearly {
@@ -213,7 +226,7 @@ hr {
 }
 
 .blackColor {
-    color: black;
+    color: #4c525a;
 }
 
 .grayColor {
@@ -420,6 +433,7 @@ hr {
     font-size: 2rem;
     line-height: 140%;
     font-weight: 400;
+    font-family: 'Amerigo-bt roman opt';
 }
 
 .add-ons {
@@ -444,16 +458,33 @@ hr {
 }
 
 .left-add-ons-info {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 1.1rem;
     line-height: 1.4;
 }
+.learn-more{
 
-.learn-more {
+    transition: transform 0.3s ease;
+}
+
+.learn-more span{
     color: #01b289;
     font-weight: 600;
     cursor: pointer;
+    margin-top: 8px;
 }
+
+.learn-more img {
+    width: 7px;
+    margin-left: 5px;
+
+
+}
+.learn-more:hover .learn-arrow{
+    transform: translateX(5px);
+}
+
+
 
 .right-add-ons {
     margin-top: 0;
@@ -464,9 +495,9 @@ hr {
 }
 
 .right-add-ons :nth-child(1) {
-    text-align: center;
     font-weight: 600;
     font-size: 2.75rem;
+    margin-bottom: 15px;
 }
 
 /* *****************************container-4******************************************** */
@@ -490,12 +521,14 @@ hr {
 .ctn-info-div div {
     font-size: 2.75rem;
     line-height: 130%;
+    font-family: 'Amerigo-bt roman opt';
 }
 
 .ctn-info-div div span {
     font-size: 2.75rem;
     line-height: 130%;
     color: #01b289;
+    font-family: 'Amerigo-bt roman opt';
 }
 
 .ctn-start-free {
@@ -755,7 +788,10 @@ hr {
     /* *****************container-4************* */
 
     .container-4 {
-        justify-self: center;
+        /* justify-self: center; */
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
     .ctn-info {
@@ -766,11 +802,25 @@ hr {
 
     /* *********container-5*************** */
 
+    .container-5 {
+        width: 90%;
+    }
 
+    .fre {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .ques {
+        text-align: left;
+    }
+    .fre-ques{
+        padding: 0 25px;
+    }
 
     .fre-ques div img {
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
         text-align: center;
     }
 
