@@ -9,6 +9,12 @@
     line-height: 20px;
 }
 
+@font-face {
+    font-family: 'Amerigo-bt roman opt';
+    src: url('./fonts/amerigo-bt.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
@@ -154,6 +160,31 @@ hr {
 
 /* ***************************container-1************************************* */
 
+.large-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blue-section._12 {
+
+    top: -88%;
+    right: -23%;
+    width: 90%;
+    height: 120%;
+
+}
+
+.blue-section {
+    position: absolute;
+    left: 0;
+    bottom: auto;
+    z-index: -1;
+    display: block;
+    border-radius: 6.6vw;
+    background-color: #f2faff;
+    transform: rotate(-23deg);
+}
 
 
 .container-1 {
@@ -164,12 +195,6 @@ hr {
     gap: 50px;
 }
 
-@font-face {
-    font-family: 'Amerigo-bt roman opt';
-    src: url('./fonts/amerigo-bt.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 
 .container-1 div h1 {
     font-size: 2.5rem;
@@ -278,6 +303,8 @@ hr {
 
 }
 
+
+
 .price-box {
     display: flex;
     border-bottom: 2px solid #01b289;
@@ -347,7 +374,8 @@ hr {
     font-size: 14px;
     color: #4c525a;
     line-height: 20px;
-    margin: 5px 0;
+    margin: 10px 0;
+
 }
 
 .info {
@@ -414,6 +442,7 @@ hr {
     text-align: center;
     letter-spacing: 1px;
 
+
 }
 
 .popular-tag div {
@@ -462,12 +491,13 @@ hr {
     font-size: 1.1rem;
     line-height: 1.4;
 }
-.learn-more{
+
+.learn-more {
 
     transition: transform 0.3s ease;
 }
 
-.learn-more span{
+.learn-more span {
     color: #01b289;
     font-weight: 600;
     cursor: pointer;
@@ -480,7 +510,8 @@ hr {
 
 
 }
-.learn-more:hover .learn-arrow{
+
+.learn-more:hover .learn-arrow {
     transform: translateX(5px);
 }
 
@@ -765,12 +796,26 @@ hr {
 
 }
 
-@media only screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
 
     /* **********container-1********* */
 
     .price div {
         font-size: 16px;
+    }
+
+
+    /* ******************container-2*********** */
+    .card-info-1{
+        margin-top: 40px;
+      
+    }
+    .card-info-2{
+        padding-right: 60px;
+    }
+    .popular-tag div{
+        line-height: 10px;
+        height: fit-content;
     }
 
     /* **************container-3*********** */
@@ -788,7 +833,6 @@ hr {
     /* *****************container-4************* */
 
     .container-4 {
-        /* justify-self: center; */
         display: flex;
         justify-content: center;
         text-align: center;
@@ -814,7 +858,8 @@ hr {
     .ques {
         text-align: left;
     }
-    .fre-ques{
+
+    .fre-ques {
         padding: 0 25px;
     }
 
