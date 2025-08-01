@@ -339,6 +339,7 @@ hr {
     font-size: 62px;
     font-weight: 600;
     display: none;
+    line-height: 72px;
 }
 
 .billed-yearly {
